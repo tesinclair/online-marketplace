@@ -1,6 +1,6 @@
 function MainPage(){
   return(
-    <div>app</div>
+    <h1>Main Page</h1>
     );
 }
 
