@@ -1,0 +1,30 @@
+Data the database needs to store
+ - User Data
+    - Name - char
+    - email - char
+    - password char - encrypted
+    - purchases - array (Product data, date of purchase)
+    - username - char
+    - Basket - array
+- Product Data
+    - Name - char
+    - image - 
+    - price - float
+    - description - char
+    - post date - date
+
+Data the api needs to recieve
+  - User Data
+  - product Data
+  - Requests
+    - User Data Requests
+    - Validation Requests
+    - Payment requests
+
+Data the api needs to send
+  - Validation result
+  - Product information
+  - User Data
+    - purchases
+    - Username
+    - Basket
