@@ -1,0 +1,8 @@
+.nav *{
+  list-style-type: none;
+  display: inline;
+  margin-block: 1em;
+}
+.options{
+  float: right;
+}
