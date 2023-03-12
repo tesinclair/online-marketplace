@@ -3,12 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CheckoutController;
-
+use App\Http\Controllers\HomeController;
 
 //Route to the main page - /
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 //Route to the checkout page - /checkout
 Route::get('/checkout', [CheckoutController::class, 'index']);
@@ -16,7 +14,7 @@ Route::get('/checkout', [CheckoutController::class, 'index']);
 Route::controller(UserController::class)->group(function() {
     Route::get('/create', 'create');
     Route::get('/login', 'login');
-})
+});
 
 
 
