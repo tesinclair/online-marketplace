@@ -12,8 +12,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+//Redirect empty path to /api
+Route::redirect("/", "/api");
 
-Route::redirect('/', function (){
+//load index page
+Route::get('/api', function () {
     return view('index');
 });
-
