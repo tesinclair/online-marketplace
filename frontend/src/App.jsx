@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from './pages/MainPage.js';
-import Checkout from './pages/Checkout.js';
-import Create from './pages/Create.js';
-import Login from './pages/Login.js';
-import OrderTracking from './pages/OrderTracking';
-import NavBar from './components/NavBar.js';
+import MainPage from './views/MainPage.jsx';
+import Checkout from './views/Checkout.jsx';
+import Create from './views/Create.jsx';
+import Login from './views/Login.jsx';
+import OrderTracking from './views/OrderTracking.jsx';
+import NavBar from './components/NavBar.jsx';
 
 function App() {
   return (
