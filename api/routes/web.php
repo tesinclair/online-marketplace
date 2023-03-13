@@ -23,7 +23,7 @@ Route::get('/api', function () {
 });
 
 
-Route::controllers(UserController::class)->group(function(){
+Route::controller(UserController::class)->group(function(){
     Route::post('/create', 'create');
     Route::get('/login/{id}', 'login');
-})
+});
