@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use app\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +21,9 @@ Route::redirect("/", "/api");
 Route::get('/api', function () {
     return view('index');
 });
+
+
+Route::controllers(UserController::class)->group(function(){
+    Route::post('/create', 'create');
+    Route::get('/login/{id}', 'login');
+})
